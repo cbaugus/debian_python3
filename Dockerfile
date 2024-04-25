@@ -3,7 +3,7 @@ FROM debian:12
 
 # Update package lists and install Python 3
 RUN apt-get update && \
-    apt-get install -y python3 python3-pip && \
+    apt-get install -y python3 python3-pip python3.11-venv && \
     apt-get clean
 
 # Set Python 3 as the default Python interpreter
